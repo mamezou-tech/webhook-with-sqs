@@ -1,0 +1,22 @@
+# API Gatewayのエンドポイントは作成毎に変わるので注意
+# ⇒ Terraformのoutputを参照
+### COMMON
+@apigw_ep=TODO: Set your API Gateway endpoint here
+
+### SQSなしでの呼び出し
+POST {{apigw_ep}}/application-hook
+Content-Type: application/json
+
+{
+  "key1": "value1",
+  "key2": "value2"
+}
+
+### SQS経由での呼び出し
+POST {{apigw_ep}}/sqs-hook
+Content-Type: application/json
+
+{
+  "key3": "value3",
+  "key4": "value4"
+}

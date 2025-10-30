@@ -1,0 +1,20 @@
+# .tfvarsファイルテンプレート
+#
+# このファイルは.tfvarsファイルのテンプレートです。
+# ファイル名を terrafrom.tfvars に変更し、以下の変数の"TODO"に自分の環境の値を設定してください。
+# 項目については豆蔵デベロッパーサイトの記事の「外部入力」の節を参照ください。
+#
+# コメントアウトされている変数はデフォルトがあるので未設定でも問題ありません。
+# （設定されているのはデフォルト値と同じです）
+#
+
+# 「IaCでSales Support Systemのインフラ構築」のAPI Gatewayの名称
+apigw_name = "mz-dev-api-gateway"
+
+webhook = {
+  # runtime              = "python3.13"
+  # max_receive_count    = 1
+  # log_level            = "INFO"
+  # max_concurrency      = 2
+  # dlq_retention_second = 1209600
+}
